@@ -1,0 +1,72 @@
+.project-access-controls {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 8px;
+}
+.project-access-actions {
+  display: flex;
+  gap: 2px;
+}
+.project-access-choice {
+  opacity: 0;
+  pointer-events: none;
+}
+.project-access-choice[data-selected="true"],
+.project-access-row:hover .project-access-choice,
+.project-access-row:focus-within .project-access-choice {
+  opacity: 1;
+  pointer-events: auto;
+}
+.project-access-button {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.project-access-button:hover:not(:disabled),
+.project-access-button[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--access-color) 14%, transparent);
+  border-color: color-mix(in srgb, var(--access-color) 45%, transparent);
+}
+.project-access-button:focus-visible {
+  outline: 2px solid var(--v2-border-border-focus);
+  outline-offset: 1px;
+}
+.project-access-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.project-access-label {
+  width: 90px;
+  white-space: nowrap;
+  text-align: left;
+}
+@media (hover: none) {
+  .project-access-choice {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.project-access-origin {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 28px;
+  flex-shrink: 0;
+}
+.project-access-label:focus-visible {
+  outline: 2px solid var(--v2-border-border-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.project-access-parent-toggle[aria-pressed="true"] {
+  color: var(--v2-border-border-focus);
+  background: color-mix(in srgb, var(--v2-border-border-focus) 12%, var(--v2-background-bg-button-neutral));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--v2-border-border-focus) 50%, transparent);
+}

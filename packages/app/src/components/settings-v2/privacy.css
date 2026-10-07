@@ -1,0 +1,97 @@
+.privacy-settings {
+  container-type: inline-size;
+  gap: 32px;
+}
+.privacy-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.privacy-access-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.privacy-access-row {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+}
+.privacy-access-options {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  border: 1px solid var(--border-weak-base);
+  border-radius: 8px;
+}
+.privacy-access-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  color: var(--text-weak);
+  cursor: pointer;
+}
+.privacy-access-option[data-access="write"] {
+  --access-color: #84cc16;
+}
+.privacy-access-option[data-access="read"] {
+  --access-color: #f97316;
+}
+.privacy-access-option[data-access="none"] {
+  --access-color: #ef4444;
+}
+.privacy-access-option[aria-pressed="true"] {
+  color: var(--text-strong);
+  background: color-mix(in srgb, var(--access-color) 14%, transparent);
+  border-color: color-mix(in srgb, var(--access-color) 45%, transparent);
+}
+.privacy-access-option[aria-pressed="true"] svg {
+  color: var(--access-color);
+}
+.privacy-access-option:hover:not(:disabled):not([aria-pressed="true"]) {
+  background: color-mix(in srgb, currentColor 7%, transparent);
+}
+.privacy-access-option:focus-visible {
+  outline: 2px solid var(--v2-border-border-focus);
+  outline-offset: 1px;
+}
+.privacy-access-option:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+.privacy-model-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 13px;
+}
+.privacy-model-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.privacy-description {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-weak);
+}
+@container (max-width: 560px) {
+  .privacy-access-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .privacy-access-options {
+    width: fit-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}

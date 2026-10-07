@@ -1,0 +1,4 @@
+[data-component="loader-v2"] {
+  display: block;
+  color: var(--v2-icon-icon-muted, #808080);
+}

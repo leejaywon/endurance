@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: repository README header banner for the project ENDURANCE.
+Primary request: Create an original cinematic spacecraft image inspired by the Endurance spacecraft from Interstellar. Use the recognizable idea of a rotating ring assembled from twelve distinct rectangular habitat and service modules, linked around an open circular center, with a few restrained radial structural connections and a small central docking hub. It must read as a believable utilitarian spacecraft, not a smooth torus space station.
+Scene/backdrop: Quiet deep black space with a very sparse star field; a subtle distant curved planetary limb along the bottom edge gives depth without distracting from the ship.
+Subject: One pale ivory and brushed-metal modular ring spacecraft, completely visible, shown at a gentle three-quarter angle so the ring is nearly circular rather than compressed edge-on. Crisp silhouette, believable panel seams, ports, and restrained surface wear. No other ships.
+Style/medium: High quality cinematic photorealistic science-fiction concept render, grounded engineering, understated and contemplative.
+Composition/framing: Wide horizontal banner, approximately 3:1 aspect ratio, preferably 1920 by 640. Ship centered, occupies roughly 70 percent of the image height, generous dark breathing room around it, every module inside the frame. Strong readability at a GitHub README width of 960px.
+Lighting/mood: Restrained warm sunlight from one side, cool reflected light in the shadow, crisp but not harsh highlights, deep space and the feeling of a long solitary voyage.
+Text: No text, no lettering, no logos, no watermark. The README already supplies its own title.
+Constraints: Create a new original composition inspired by the film's ring spacecraft, not a movie still or a poster. Keep the image uncluttered. No typography, no astronauts, no laptops, no cats, no neon colors, no exaggerated lens flare, no exploding debris. Opaque dark space background.

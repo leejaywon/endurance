@@ -1,0 +1,11 @@
+.git
+.opencode
+.sst
+.turbo
+node_modules
+**/node_modules
+**/.output
+**/dist
+**/.turbo
+**/.vite
+**/coverage
